@@ -3,7 +3,7 @@ class Question < ActiveRecord::Base
    has_many :answers
    has_many :upvoteqs
    has_many :downvoteqs
-  validates :content, presence: true
+  validates :content, presence: true, length: {maximum: 1000}
   def upvote_question user_id
   	Upvoteq.where(question_id: id, user_id: user_id).length > 0
   end

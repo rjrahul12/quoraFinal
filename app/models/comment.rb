@@ -5,6 +5,7 @@ class Comment < ActiveRecord::Base
   has_many :upvotecs
   has_many :replies
   has_many :downvotecs
+  validates :content, presence: true, length: {maximum: 1000}
 def upvote_comment user_id
     Upvotec.where(comment_id: id, user_id: user_id).length > 0
   end
