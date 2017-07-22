@@ -5,7 +5,11 @@
 <h3>A place to share knowledge and better understand the world</h3>
 <br>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  
+  <% unless devise_error_messages!.blank? %>
+  <script type="text/javascript">
+    noty({text: '<%=  devise_error_messages!.split("<li>")[1].split("</li>")[0] %>',type: 'error',timeout: 1000});
+  </script>
+  <% end %>
       <div class="field">
       <%=f.label :SignUp%>
       </div>
