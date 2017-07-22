@@ -1,0 +1,33 @@
+
+			
+	<div class="questionShow">
+			<div>
+			asked by <%=question.user.firstName%> <%=question.user.lastName%> 
+			on <%=question.created_at.strftime("%b %d,%y")%><br>
+			<h1><b><%=question.content%></b></h1>
+			</div>
+			<br>
+			<%= link_to 'Upvote', url_for(controller: 'upvoteqs', action: 'upvoteToggle', question: question.id), method: :post,id: "upvote_question_#{question.id}", remote: true, class: question.classStringQuestion(current_user.id) %>   <span id="upcount_question_<%=question.id%>"><%= question.upvoteqs.count %></span>
+
+			<%= link_to 'Downvote', url_for(controller: 'downvoteqs', action: 'downvoteToggle', question: question.id), method: :post,id: "downvote_question_#{question.id}",remote: true, class: question.classStringQuestionDownVote(current_user.id) %>   <span id="downcount_question_<%=question.id%>"><%= question.downvoteqs.count %></span>
+			<br><br>
+
+			<div id="createAnswer">
+			<%@answer=Answer.new%>
+				 <%= form_for @answer, remote: true do |f|%>
+					 <%= f.label :Answer %> <br>
+					 <%= f.text_area :content,id:  "answer_content_#{question.id}"%>  <br>
+				  	 <%= f.hidden_field :question_id, :value => question.id %>
+					 <%=f.hidden_field :user_id, :value => current_user.id %>
+					 <%= f.submit value:"Answer" ,id:  'create-answer-submit'%>
+			 	 <%end%>
+			</div>
+			<% answers = Answer.where(question_id: question.id).order(created_at: :desc)%>
+			<div id="allAnswers_<%=question.id%>" class="allAnswers">
+				 <%  answers.each do |answer| %><br>
+					 <%=render 'answer',question: question,answer: answer%>
+				 <%end%>
+			</div>
+
+
+		</div>

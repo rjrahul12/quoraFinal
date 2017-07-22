@@ -1,0 +1,791 @@
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-21 23:31:26 +0530
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rahul/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rahul/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rahul/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.8ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.5ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/rahul/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.6ms)
+  [1m[36m (99.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (77.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20170716181149)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170716181149"]]
+  [1m[36m (100.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateQuestions (20170716181356)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_questions_on_user_id" ON "questions" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170716181356"]]
+  [1m[35m (95.2ms)[0m  commit transaction
+Migrating to CreateAnswers (20170716181442)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "user_id" integer, "question_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_answers_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_answers_on_user_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170716181442"]]
+  [1m[36m (82.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddNameToUser (20170716182335)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "firstName" varchar[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "lastName" varchar
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170716182335"]]
+  [1m[35m (69.0ms)[0m  commit transaction
+Migrating to CreateUpvoteqs (20170718053830)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "upvoteqs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "question_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_upvoteqs_on_user_id" ON "upvoteqs" ("user_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoteqs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoteqs_on_user_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_upvoteqs_on_question_id" ON "upvoteqs" ("question_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170718053830"]]
+  [1m[36m (87.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDownvoteqs (20170718062029)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "downvoteqs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "question_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_downvoteqs_on_user_id" ON "downvoteqs" ("user_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoteqs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoteqs_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_downvoteqs_on_question_id" ON "downvoteqs" ("question_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170718062029"]]
+  [1m[35m (172.0ms)[0m  commit transaction
+Migrating to CreateUpvoteas (20170718093739)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "upvoteas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "answer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_upvoteas_on_user_id" ON "upvoteas" ("user_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoteas_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoteas_on_user_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_upvoteas_on_answer_id" ON "upvoteas" ("answer_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170718093739"]]
+  [1m[36m (82.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDownvoteas (20170718093905)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "downvoteas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "answer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_downvoteas_on_user_id" ON "downvoteas" ("user_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoteas_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoteas_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_downvoteas_on_answer_id" ON "downvoteas" ("answer_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170718093905"]]
+  [1m[35m (82.2ms)[0m  commit transaction
+Migrating to AddProfilepictureToUser (20170719173820)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  ALTER TABLE "users" ADD "profile_picture" varchar
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170719173820"]]
+  [1m[35m (85.2ms)[0m  commit transaction
+Migrating to CreateComments (20170720094532)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "answer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_comments_on_answer_id" ON "comments" ("answer_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170720094532"]]
+  [1m[36m (71.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddContentToComment (20170720100833)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "comments" ADD "content" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170720100833"]]
+  [1m[36m (62.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUpvotecs (20170720172448)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "upvotecs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "comment_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_upvotecs_on_user_id" ON "upvotecs" ("user_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvotecs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvotecs_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_upvotecs_on_comment_id" ON "upvotecs" ("comment_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170720172448"]]
+  [1m[35m (73.8ms)[0m  commit transaction
+Migrating to CreateDownvotecs (20170720172459)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "downvotecs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "comment_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_downvotecs_on_user_id" ON "downvotecs" ("user_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvotecs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvotecs_on_user_id' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mCREATE  INDEX "index_downvotecs_on_comment_id" ON "downvotecs" ("comment_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170720172459"]]
+  [1m[36m (82.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateReplies (20170721141212)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "replies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "user_id" integer, "comment_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_replies_on_user_id" ON "replies" ("user_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_replies_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_replies_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_replies_on_comment_id" ON "replies" ("comment_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170721141212"]]
+  [1m[35m (93.3ms)[0m  commit transaction
+Migrating to CreateUpvoters (20170721152121)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "upvoters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "reply_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_upvoters_on_user_id" ON "upvoters" ("user_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoters_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoters_on_user_id' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mCREATE  INDEX "index_upvoters_on_reply_id" ON "upvoters" ("reply_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170721152121"]]
+  [1m[36m (82.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDownvoters (20170721152132)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "downvoters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "reply_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_downvoters_on_user_id" ON "downvoters" ("user_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoters_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoters_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_downvoters_on_reply_id" ON "downvoters" ("reply_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170721152132"]]
+  [1m[35m (114.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_answers_on_question_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_answers_on_question_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_answers_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_answers_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_answer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_answer_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoteas_on_answer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoteas_on_answer_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoteas_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoteas_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvotecs_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvotecs_on_comment_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvotecs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvotecs_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoteqs_on_question_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoteqs_on_question_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoteqs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoteqs_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoters_on_reply_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoters_on_reply_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_downvoters_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_downvoters_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_questions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_questions_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_replies_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_replies_on_comment_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_replies_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_replies_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoteas_on_answer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoteas_on_answer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoteas_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoteas_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvotecs_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvotecs_on_comment_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvotecs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvotecs_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoteqs_on_question_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoteqs_on_question_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoteqs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoteqs_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoters_on_reply_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoters_on_reply_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_upvoters_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_upvoters_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-21 23:31:43 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 31ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-07-21 23:31:43 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (1379.6ms)
+Completed 200 OK in 1488ms (Views: 1471.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvotecs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/answers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/home.self-e1e12f0b7daac8907d36f574954aaafd350609295cc752a745e16edf043fe2c5.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvoteas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvoters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvoteqs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/questions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvoteq.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/replies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/scaffolds.self-87c5712e20af8c7410ed912c28371710b9b63da2e81113097b2145193ba8302d.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/upvoteas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/upvotecs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/upvoters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/upvoteqs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/application.self-0fb9508b5a89d7916ca99eb7ac2ce6b0f9444d86c28e0db444dfef06a8f77caf.css?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvoteas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvotecs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvoteq.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvoteqs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/downvoters.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/replies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/upvoteas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/upvotecs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/upvoteqs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/upvoters.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/assets/Quora_logo-7b79d1a12976e310c1a59c2d60abb7efbea444152e49c9126b65736cb40489a2.png" for 127.0.0.1 at 2017-07-21 23:31:44 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-07-21 23:31:48 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.3ms)
+  Rendered users/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-07-21 23:32:00 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/1a6zqRpo320T2spjjvtLBcqzrjDZKFOMYZSCuC7Dq/Oj7JUuFRLiWEpJXpkbWWv4C8EFLhBM2S2ysr2k+ajAg==", "user"=>{"firstName"=>"Rahul", "lastName"=>"Jain", "email"=>"jainr7750@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jainr7750@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "firstName", "lastName", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "jainr7750@gmail.com"], ["encrypted_password", "$2a$11$6NkOpBoqYg9L5fh6/C7WpuT7JMsFu8MTmtPLEYBb3yKAArlfqy7U6"], ["firstName", "Rahul"], ["lastName", "Jain"], ["created_at", "2017-07-21 18:02:00.836990"], ["updated_at", "2017-07-21 18:02:00.836990"]]
+  [1m[36m (72.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-07-21 18:02:00.913445"], ["current_sign_in_at", "2017-07-21 18:02:00.913445"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2017-07-21 18:02:00.916222"], ["id", 1]]
+  [1m[35m (58.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 506ms (ActiveRecord: 132.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-21 23:32:01 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 74ms (Views: 51.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-07-21 23:32:20 +0530
+Processing by QuestionsController#create as JS
+  Parameters: {"utf8"=>"✓", "question"=>{"content"=>"Is this Working Like Expected?\r\n"}, "commit"=>"Ask question"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Is this Working Like Expected?\r\n"], ["user_id", 1], ["created_at", "2017-07-21 18:02:20.351377"], ["updated_at", "2017-07-21 18:02:20.351377"]]
+  [1m[35m (79.6ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUpvoteq Load (0.1ms)[0m  SELECT "upvoteqs".* FROM "upvoteqs" WHERE "upvoteqs"."question_id" = ? AND "upvoteqs"."user_id" = ?  [["question_id", 1], ["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "upvoteqs" WHERE "upvoteqs"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[35mDownvoteq Load (0.1ms)[0m  SELECT "downvoteqs".* FROM "downvoteqs" WHERE "downvoteqs"."question_id" = ? AND "downvoteqs"."user_id" = ?  [["question_id", 1], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "downvoteqs" WHERE "downvoteqs"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 1]]
+  Rendered home/_question.html.erb (70.0ms)
+  Rendered questions/create.js.erb (74.6ms)
+Completed 200 OK in 180ms (Views: 89.7ms | ActiveRecord: 81.6ms)
+
+
+Started POST "/answers" for 127.0.0.1 at 2017-07-21 23:32:27 +0530
+Processing by AnswersController#create as JS
+  Parameters: {"utf8"=>"✓", "answer"=>{"content"=>"Seems to be", "question_id"=>"1", "user_id"=>"1"}, "commit"=>"Answer"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "answers" ("content", "user_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "Seems to be"], ["user_id", 1], ["question_id", 1], ["created_at", "2017-07-21 18:02:27.352820"], ["updated_at", "2017-07-21 18:02:27.352820"]]
+  [1m[36m (79.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUpvotea Load (0.1ms)[0m  [1mSELECT "upvoteas".* FROM "upvoteas" WHERE "upvoteas"."answer_id" = ? AND "upvoteas"."user_id" = ?[0m  [["answer_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "upvoteas" WHERE "upvoteas"."answer_id" = ?  [["answer_id", 1]]
+  [1m[36mDownvotea Load (0.1ms)[0m  [1mSELECT "downvoteas".* FROM "downvoteas" WHERE "downvoteas"."answer_id" = ? AND "downvoteas"."user_id" = ?[0m  [["answer_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "downvoteas" WHERE "downvoteas"."answer_id" = ?  [["answer_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = ?  ORDER BY "comments"."created_at" DESC[0m  [["answer_id", 1]]
+  Rendered home/_answer.html.erb (29.6ms)
+  Rendered answers/create.js.erb (40.5ms)
+Completed 200 OK in 140ms (Views: 53.3ms | ActiveRecord: 81.9ms)
+
+
+Started POST "/upvoteToggleAnswer?answer=1" for 127.0.0.1 at 2017-07-21 23:32:29 +0530
+Processing by UpvoteasController#upvoteToggleAnswer as JS
+  Parameters: {"answer"=>"1"}
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUpvotea Load (0.4ms)[0m  SELECT  "upvoteas".* FROM "upvoteas" WHERE "upvoteas"."answer_id" = ? AND "upvoteas"."user_id" = ?  ORDER BY "upvoteas"."id" ASC LIMIT 1  [["answer_id", 1], ["user_id", 1]]
+  [1m[36mDownvotea Load (0.4ms)[0m  [1mSELECT  "downvoteas".* FROM "downvoteas" WHERE "downvoteas"."answer_id" = ? AND "downvoteas"."user_id" = ?  ORDER BY "downvoteas"."id" ASC LIMIT 1[0m  [["answer_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "upvoteas" ("answer_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["answer_id", 1], ["user_id", 1], ["created_at", "2017-07-21 18:02:29.888400"], ["updated_at", "2017-07-21 18:02:29.888400"]]
+  [1m[35m (100.4ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "upvoteas" WHERE "upvoteas"."answer_id" = ?[0m  [["answer_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "downvoteas" WHERE "downvoteas"."answer_id" = ?  [["answer_id", 1]]
+  Rendered upvoteas/upvoteToggleAnswer.js.erb (9.8ms)
+Completed 200 OK in 145ms (Views: 24.1ms | ActiveRecord: 103.4ms)
+
+
+Started POST "/downvoteToggleAnswer?answer=1" for 127.0.0.1 at 2017-07-21 23:32:32 +0530
+Processing by DownvoteasController#downvoteToggleAnswer as JS
+  Parameters: {"answer"=>"1"}
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUpvotea Load (0.1ms)[0m  [1mSELECT  "upvoteas".* FROM "upvoteas" WHERE "upvoteas"."answer_id" = ? AND "upvoteas"."user_id" = ?  ORDER BY "upvoteas"."id" ASC LIMIT 1[0m  [["answer_id", 1], ["user_id", 1]]
+  [1m[35mDownvotea Load (0.1ms)[0m  SELECT  "downvoteas".* FROM "downvoteas" WHERE "downvoteas"."answer_id" = ? AND "downvoteas"."user_id" = ?  ORDER BY "downvoteas"."id" ASC LIMIT 1  [["answer_id", 1], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "upvoteas" WHERE "upvoteas"."id" = ?  [["id", 1]]
+  [1m[36m (73.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "downvoteas" ("answer_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["answer_id", 1], ["user_id", 1], ["created_at", "2017-07-21 18:02:32.307548"], ["updated_at", "2017-07-21 18:02:32.307548"]]
+  [1m[35m (58.1ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "upvoteas" WHERE "upvoteas"."answer_id" = ?[0m  [["answer_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "downvoteas" WHERE "downvoteas"."answer_id" = ?  [["answer_id", 1]]
+  Rendered downvoteas/downvoteToggleAnswer.js.erb (8.7ms)
+Completed 200 OK in 171ms (Views: 19.2ms | ActiveRecord: 134.1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2017-07-21 23:32:39 +0530
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"content"=>"OHh Yaa", "answer_id"=>"1", "user_id"=>"1"}, "commit"=>"Comment"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("user_id", "answer_id", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["user_id", 1], ["answer_id", 1], ["content", "OHh Yaa"], ["created_at", "2017-07-21 18:02:39.466148"], ["updated_at", "2017-07-21 18:02:39.466148"]]
+  [1m[36m (122.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUpvotec Load (0.1ms)[0m  [1mSELECT "upvotecs".* FROM "upvotecs" WHERE "upvotecs"."comment_id" = ? AND "upvotecs"."user_id" = ?[0m  [["comment_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "upvotecs" WHERE "upvotecs"."comment_id" = ?  [["comment_id", 1]]
+  [1m[36mDownvotec Load (0.1ms)[0m  [1mSELECT "downvotecs".* FROM "downvotecs" WHERE "downvotecs"."comment_id" = ? AND "downvotecs"."user_id" = ?[0m  [["comment_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "downvotecs" WHERE "downvotecs"."comment_id" = ?  [["comment_id", 1]]
+  [1m[36mReply Load (0.1ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."comment_id" = ?  ORDER BY "replies"."created_at" DESC[0m  [["comment_id", 1]]
+  Rendered home/_comment.html.erb (33.0ms)
+  Rendered comments/create.js.erb (44.7ms)
+Completed 200 OK in 187ms (Views: 56.5ms | ActiveRecord: 125.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-21 23:32:46 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUpvoteq Load (0.1ms)[0m  [1mSELECT "upvoteqs".* FROM "upvoteqs" WHERE "upvoteqs"."question_id" = ? AND "upvoteqs"."user_id" = ?[0m  [["question_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "upvoteqs" WHERE "upvoteqs"."question_id" = ?  [["question_id", 1]]
+  [1m[36mDownvoteq Load (0.0ms)[0m  [1mSELECT "downvoteqs".* FROM "downvoteqs" WHERE "downvoteqs"."question_id" = ? AND "downvoteqs"."user_id" = ?[0m  [["question_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "downvoteqs" WHERE "downvoteqs"."question_id" = ?  [["question_id", 1]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUpvotea Load (0.1ms)[0m  [1mSELECT "upvoteas".* FROM "upvoteas" WHERE "upvoteas"."answer_id" = ? AND "upvoteas"."user_id" = ?[0m  [["answer_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "upvoteas" WHERE "upvoteas"."answer_id" = ?  [["answer_id", 1]]
+  [1m[36mDownvotea Load (0.1ms)[0m  [1mSELECT "downvoteas".* FROM "downvoteas" WHERE "downvoteas"."answer_id" = ? AND "downvoteas"."user_id" = ?[0m  [["answer_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "downvoteas" WHERE "downvoteas"."answer_id" = ?  [["answer_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = ?  ORDER BY "comments"."created_at" DESC[0m  [["answer_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUpvotec Load (0.1ms)[0m  [1mSELECT "upvotecs".* FROM "upvotecs" WHERE "upvotecs"."comment_id" = ? AND "upvotecs"."user_id" = ?[0m  [["comment_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "upvotecs" WHERE "upvotecs"."comment_id" = ?  [["comment_id", 1]]
+  [1m[36mDownvotec Load (0.1ms)[0m  [1mSELECT "downvotecs".* FROM "downvotecs" WHERE "downvotecs"."comment_id" = ? AND "downvotecs"."user_id" = ?[0m  [["comment_id", 1], ["user_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "downvotecs" WHERE "downvotecs"."comment_id" = ?  [["comment_id", 1]]
+  [1m[36mReply Load (0.1ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."comment_id" = ?  ORDER BY "replies"."created_at" DESC[0m  [["comment_id", 1]]
+  Rendered home/_comment.html.erb (7.9ms)
+  Rendered home/_answer.html.erb (16.9ms)
+  Rendered home/_question.html.erb (25.9ms)
+  Rendered home/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 69ms (Views: 65.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-21 23:32:56 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUpvoteq Load (0.1ms)[0m  [1mSELECT "upvoteqs".* FROM "upvoteqs" WHERE "upvoteqs"."question_id" = ? AND "upvoteqs"."user_id" = ?[0m  [["question_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "upvoteqs" WHERE "upvoteqs"."question_id" = ?  [["question_id", 1]]
+  [1m[36mDownvoteq Load (0.1ms)[0m  [1mSELECT "downvoteqs".* FROM "downvoteqs" WHERE "downvoteqs"."question_id" = ? AND "downvoteqs"."user_id" = ?[0m  [["question_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "downvoteqs" WHERE "downvoteqs"."question_id" = ?  [["question_id", 1]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUpvotea Load (0.1ms)[0m  [1mSELECT "upvoteas".* FROM "upvoteas" WHERE "upvoteas"."answer_id" = ? AND "upvoteas"."user_id" = ?[0m  [["answer_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "upvoteas" WHERE "upvoteas"."answer_id" = ?  [["answer_id", 1]]
+  [1m[36mDownvotea Load (0.1ms)[0m  [1mSELECT "downvoteas".* FROM "downvoteas" WHERE "downvoteas"."answer_id" = ? AND "downvoteas"."user_id" = ?[0m  [["answer_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "downvoteas" WHERE "downvoteas"."answer_id" = ?  [["answer_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = ?  ORDER BY "comments"."created_at" DESC[0m  [["answer_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUpvotec Load (0.1ms)[0m  [1mSELECT "upvotecs".* FROM "upvotecs" WHERE "upvotecs"."comment_id" = ? AND "upvotecs"."user_id" = ?[0m  [["comment_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "upvotecs" WHERE "upvotecs"."comment_id" = ?  [["comment_id", 1]]
+  [1m[36mDownvotec Load (0.1ms)[0m  [1mSELECT "downvotecs".* FROM "downvotecs" WHERE "downvotecs"."comment_id" = ? AND "downvotecs"."user_id" = ?[0m  [["comment_id", 1], ["user_id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "downvotecs" WHERE "downvotecs"."comment_id" = ?  [["comment_id", 1]]
+  [1m[36mReply Load (0.1ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."comment_id" = ?  ORDER BY "replies"."created_at" DESC[0m  [["comment_id", 1]]
+  Rendered home/_comment.html.erb (6.6ms)
+  Rendered home/_answer.html.erb (13.0ms)
+  Rendered home/_question.html.erb (25.1ms)
+  Rendered home/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2017-07-21 23:33:00 +0530
+Processing by HomeController#profile as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."user_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["user_id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/profile.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2017-07-21 23:37:07 +0530
+Processing by HomeController#profile as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."user_id" = ?  ORDER BY "answers"."created_at" DESC  [["user_id", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/profile.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2017-07-21 23:38:27 +0530
+Processing by HomeController#profile as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."user_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["user_id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/profile.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-07-21 23:38:28 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5V2/IeHOEp6DM/R/V2qtbaJ5Z5JOKNk2HvnLfdaMk3vUhLe7/fP6alZVuiy9PCXuVXytPjUNSxyZtVOBpdE+1g=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 286ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-21 23:38:29 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-07-21 23:38:29 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.9ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)

@@ -1,0 +1,40 @@
+	<div class="answerShow">
+		<div class="user">
+		<div class="left">
+			<% if answer.user.profile_picture %>
+				<img src="/uploads/<%= answer.user.profile_picture %>" class="profile_image" >
+			<%else%>
+				<img src="/uploads/twitter-default-no-profile-pic.jpg" class="profile_image" >
+			<% end %>
+		</div>
+		<div class = "right">
+		answered by <%=answer.user.firstName%> <%=answer.user.lastName%>
+		on <%=answer.created_at.strftime("%b %d,%y")%><br>
+		</div>
+		</div>
+		<span id="content"><%=answer.content%> </span>
+		<br><br>
+		<%= link_to 'Upvote', url_for(controller: 'upvoteas', action: 'upvoteToggleAnswer', answer: answer.id), method: :post,id: "upvote_answer_#{answer.id}", remote: true, class: answer.classStringAnswer(current_user.id)%>   <span id="upcount_answer_<%=answer.id%>"><%= answer.upvoteas.count %></span>
+
+		<%= link_to 'Downvote', url_for(controller: 'downvoteas', action: 'downvoteToggleAnswer', answer: answer.id), method: :post,id: "downvote_answer_#{answer.id}",remote: true, class: answer.classStringAnswerDownvote(current_user.id) %>   <span id="downcount_answer_<%=answer.id%>"><%= answer.downvoteas.count %></span>
+		<br><br>
+
+		<div id="createComment">
+			<%@comment=Comment.new%>
+				 <%= form_for @comment, remote: true do |f|%>
+					 <%= f.label :comment %> <br>
+					 <%= f.text_area :content,id:  "comment_content_#{answer.id}"%>  <br>
+				  	 <%= f.hidden_field :answer_id, :value => answer.id %>
+					 <%=f.hidden_field :user_id, :value => current_user.id %>
+					 <%= f.submit value:"Comment" ,id:  'create-comment-submit'%>
+			 	 <%end%>
+		</div>
+		<% comments = Comment.where(answer_id: answer.id).order(created_at: :desc)%>
+			<div id="allComments_<%=answer.id%>" class="allComments">
+				 <%  comments.each do |comment| %><br>
+					 <%=render 'comment',answer: answer,comment: comment%>
+				 <%end%>
+			</div>
+
+	</div>
+	
